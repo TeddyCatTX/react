@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom';
 const navigation = [
     { name: 'Employees', href: '/Employees' },
     { name: 'Customers', href: '/Customers' },
-    { name: 'Projects', href: '/other' },
+    { name: 'Dictionary', href: '/Dictionary' },
     { name: 'Calendar', href: '/other2' },
 ];
 
@@ -61,8 +61,8 @@ export default function Header(props) {
                                                         return (
                                                             'px-3 py-2 rounded-md text-sm font-medium no-underline ' +
                                                             (!isActive
-                                                                ? ' text-gray-300 hover:bg-gray-700 hover:text-white'
-                                                                : 'bg-gray-900 text-white')
+                                                                ? ' text-gray-300 hover:bg-gray-500 hover:text-white'
+                                                                : 'bg-gray-700 text-white')
                                                         );
                                                     }}
                                                 >
@@ -97,7 +97,7 @@ export default function Header(props) {
                                         to={item.href}
                                         className={({ isActive }) => {
                                             return (
-                                                'block px-3 py-2 rounded-md text-base font-medium no-underline ' +
+                                                'block px-3 py-2 rounded-md text-base font-medium no-underline' +
                                                 (!isActive
                                                     ? ' text-gray-300 hover:bg-gray-700 hover:text-white'
                                                     : 'bg-gray-900 text-white')
